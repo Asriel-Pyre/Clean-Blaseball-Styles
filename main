@@ -1,0 +1,70 @@
+/* ==UserStyle==
+@name           blaseball.com - 3/9/2023, 10:10:23 PM
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    An attempt to add a complete "Light Mode" to blaseball dot com, as well as clean up the general UI of the site. Functional with Minimalist Blaseball!
+@author         Asriel (Asriel#4086 on Discord)
+==/UserStyle== */
+
+@-moz-document domain("blaseball.com") {
+    .theme-dark, .ticker, .ticker__message, .shared__glass-container, .playtab__cover-header__info, .navigation__block, .navigation__title, .user-header__choices__label, .Post, .playtab__cover-content{
+        background-color: #f5f4f2;
+        color: #000
+    }
+    
+    .playtab__cover-cta-description,.League__button, .PostFeed-Header-Subtitle, .Post-Title, .PostUser-Username-OriginalPost,.Post-ActionBar-Text{
+        color: #000
+    }
+    
+    .playtab__cover-cta-icon{
+        background-color:#000
+    }
+    
+    a.shared__team-button.playtab__election-small-button{
+        background-color:#f5f4f2 !important;
+        color:#000 !important;
+    }
+    
+    .shared__glass-container{
+        border: 1px solid #0b0d0f;
+    }
+    
+    span.user-header__info__resource:nth-child(1) > svg:nth-child(1) > path:nth-child(1), span.user-header__info__resource:nth-child(2) > svg:nth-child(1) > path:nth-child(1), a.navigation__link:nth-child(2) > svg:nth-child(1) > path:nth-child(1), a.navigation__link:nth-child(3) > svg:nth-child(1) > path:nth-child(1), a.navigation__link:nth-child(4) > svg:nth-child(1) > path:nth-child(1), .Post-ActionBar-Icon-Voted > path:nth-child(1){
+        fill:#000;
+    }
+    
+   .user-header__pin-outline {
+        height: auto;
+        width: auto; /* Whilst not explicitly an edit to make the site light mode, it fixes a border issue made far more visible by using light mode. It was frustrating me whilst I was coding, so I figure it'll frustrate people using it too. */
+        filter: invert(100%); /* whilst only a cosmetic change, I wanted the site to feel cosnistent, and therefore invert the blaseball logo. */
+    }
+    
+    .League-DivisionCard-ListItem, .League-DivisionCard-Rank{
+        background:rgba(255, 255, 255, 0.1);
+    }
+    
+    .League-DivisionCard{
+        background-color:#f5f4f2
+    }
+    
+    .League__button{
+        background:#f5f4f2;
+        border: 1px solid #000;
+    }
+    
+    .CreatePost-Button{
+        background-color:#000 !important;
+        color:#f5f4f2 !important;
+    }
+    
+    .Post-ActionBar-Mod{
+        stroke: #0b0d0f;
+        stroke-width:0.07rem;
+        stroke-linejoin: round; 
+    }
+    
+    html{
+        background-color: #f5f4f2; /* This should only affect the site's loading screens? I was getting giant black boxes whilst loading the site and this got rid of them, so. */
+    }
+    
+}
