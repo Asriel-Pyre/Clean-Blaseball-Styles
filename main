@@ -1,19 +1,23 @@
 /* ==UserStyle==
 @name           blaseball.com - 3/9/2023, 10:10:23 PM
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.2
 @description    An attempt to add a complete "Light Mode" to blaseball dot com, as well as clean up the general UI of the site. Functional with Minimalist Blaseball!
 @author         Asriel (Asriel#4086 on Discord)
 ==/UserStyle== */
 
 @-moz-document domain("blaseball.com") {
-    .theme-dark, .ticker, .ticker__message, .shared__glass-container, .playtab__cover-header__info, .navigation__block, .navigation__title, .user-header__choices__label, .Post, .playtab__cover-content{
+    .theme-dark, .ticker, .ticker__message, .shared__glass-container, .playtab__cover-header__info, .navigation__block, .navigation__title, .user-header__choices__label, .Post, .playtab__cover-content, .shared__glass-container.pinventory__header{
         background-color: #f5f4f2;
         color: #000
     }
     
-    .playtab__cover-cta-description,.League__button, .PostFeed-Header-Subtitle, .Post-Title, .PostUser-Username-OriginalPost,.Post-ActionBar-Text{
-        color: #000
+    .playtab__cover-cta-description,.League__button, .PostFeed-Header-Subtitle, .Post-Title, .PostUser-Username-OriginalPost,.Post-ActionBar-Text, .pinventory__header-email-text, .pinventory__header-sub-text, .pinventory__header-sub-text-white, .account__tabs__link.nav-link, .StatTableRowLayout.TwoLine, .StatTableRowLayout, .Tab, .Row,.label-mono-small, .Post-Reply-Body, .Post-Text{
+        color: #000 !important;
+    }
+    
+    div.Post-Text a{
+        color: #ff0000 !important;
     }
     
     .playtab__cover-cta-icon{
@@ -26,6 +30,7 @@
     }
     
     .shared__glass-container{
+        background:#fff;
         border: 1px solid #0b0d0f;
     }
     
@@ -33,7 +38,7 @@
         fill:#000;
     }
     
-   .user-header__pin-outline {
+   .user-header__pin-outline, .user-header__pin-outline--active {
         height: auto;
         width: auto; /* Whilst not explicitly an edit to make the site light mode, it fixes a border issue made far more visible by using light mode. It was frustrating me whilst I was coding, so I figure it'll frustrate people using it too. */
         filter: invert(100%); /* whilst only a cosmetic change, I wanted the site to feel cosnistent, and therefore invert the blaseball logo. */
@@ -61,6 +66,18 @@
         stroke: #0b0d0f;
         stroke-width:0.07rem;
         stroke-linejoin: round; 
+    }
+
+    .account__tabs__link.nav-link.active{
+        color:#000 !important;
+    }
+    
+    .Tab.is-active, .Tab{
+        border-color:#000 !important;
+    }
+    
+    .Stars, .navigation__icon, .navigation__icon--active, div.StatTableRowLayout.TwoLine svg, div.StarsRow svg{
+        filter: invert(100%);
     }
     
     html{
