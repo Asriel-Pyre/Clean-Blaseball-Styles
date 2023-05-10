@@ -12,7 +12,7 @@
         color: #000
     }
     
-    .playtab__cover-cta-description,.League__button, .PostFeed-Header-Subtitle, .Post-Title, .PostUser-Username-OriginalPost,.Post-ActionBar-Text, .pinventory__header-email-text, .pinventory__header-sub-text, .pinventory__header-sub-text-white, .account__tabs__link.nav-link, .StatTableRowLayout.TwoLine, .StatTableRowLayout, .Tab, .Row,.label-mono-small, .Post-Reply-Body, .Post-Text{
+    .playtab__cover-cta-description,.League__button, .PostFeed-Header-Subtitle, .Post-Title, .PostUser-Username-OriginalPost,.Post-ActionBar-Text, .pinventory__header-email-text, .pinventory__header-sub-text, .pinventory__header-sub-text-white, .account__tabs__link.nav-link, .StatTableRowLayout.TwoLine, .StatTableRowLayout, .Tab, .Row,.label-mono-small, .Post-Reply-Body, .Post-Text, .league__header__info, .league__header__standings__info, .player-header__content__info__player__positions__tag, .PlayerLayout .player-header__content__actions__note__link, .player-header__content__actions__button__label, .team-header__content__info__team__standings__division-name{
         color: #000 !important;
     }
     
@@ -21,10 +21,18 @@
     }
     
     .playtab__cover-cta-icon{
-        background-color:#000
+        background-color:#000;
     }
     
-    a.shared__team-button.playtab__election-small-button{
+    .team-header__content__actions__button, .player-header__content__actions__button{
+        border: 1px solid #0a0b0d !important;
+    }
+    
+    .team-header__content__actions__button__label, input#favourite-team-toggle, input#player-idol-toggle{
+        color: #0a0b0d !important;
+    }
+    
+    a.shared__team-button{
         background-color:#f5f4f2 !important;
         color:#000 !important;
     }
@@ -34,7 +42,7 @@
         border: 1px solid #0b0d0f;
     }
     
-    span.user-header__info__resource:nth-child(1) > svg:nth-child(1) > path:nth-child(1), span.user-header__info__resource:nth-child(2) > svg:nth-child(1) > path:nth-child(1), a.navigation__link:nth-child(2) > svg:nth-child(1) > path:nth-child(1), a.navigation__link:nth-child(3) > svg:nth-child(1) > path:nth-child(1), a.navigation__link:nth-child(4) > svg:nth-child(1) > path:nth-child(1), .Post-ActionBar-Icon-Voted > path:nth-child(1){
+    span.user-header__info__resource:nth-child(n) > svg:nth-child(n) > path:nth-child(n), span.user-header__info__resource:nth-child(n) > svg:nth-child(n) > path:nth-child(n), a.navigation__link:nth-child(n) > svg:nth-child(n) > path:nth-child(n), a.navigation__link:nth-child(n) > svg:nth-child(n) > path:nth-child(n), a.navigation__link:nth-child(n) > svg:nth-child(n) > path:nth-child(n), .Post-ActionBar-Icon-Voted > path:nth-child(n), .league__header__icon > svg:nth-child(n) > path:nth-child(n), .BackButton > svg:nth-child(n) > path:nth-child(n){
         fill:#000;
     }
     
@@ -48,7 +56,7 @@
         background:rgba(255, 255, 255, 0.1);
     }
     
-    .League-DivisionCard{
+    .League-DivisionCard, span.team-header__content__info__team__modifications__tag:nth-child(n){
         background-color:#f5f4f2
     }
     
